@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontCake</title>
+</head>
+<body>
+    <header>
+        <h2>LOGO con INICIO, PEDIDOS Y CARRITO</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>Carrito</li>
+            <li>Pedidos</li>
+            <li>Inicio</li>
+        </ul>
+    </nav>
+    <article id="muestras">
+        <h1>"Lo que esta dentro es mejor, pero la apariencia es importante"</h1>
+        <br>
+        <br>
+        <h2>TOP 4 PASTELES MAS PEDIDOS</h2>
+        <table>
+            <tr>
+                <th>ESTOS SON NUESTROS PASTELES MAS PEDIDOS POR LA COMUNIDAD</th>
+            </tr>
+            <tr>
+                <br>
+                <br>
+                <td>PASTEL 1</td>
+                <td>PASTEL 3</td>
+            </tr>
+            <tr>
+                <td>PASTEL 2</td>
+                
+                <td>PASTEL 4</td>
+            </tr>
+        </table>
+    </article>
+    <article id="crea">
+        <h2>CREA TUS PASTELES</h2>
+        <p>EN ESTE APARTADO SE MUESTRA EL PASTEL CON UN SIGNO DE PREGUNTA Y A UN LADO LOS SABORES Y COMPLEMENTOS QUE DESEE AGREGAR A TRAVES DE BOTONES</p>
+        <table>
+            <tr>
+                <th>ESTOS SON NUESTROS PASTELES MAS PEDIDOS POR LA COMUNIDAD</th>
+            </tr>
+            <tr>
+                <br>
+                <br>
+                <td>IMAGEN PASTEL</td>
+                <td><p>SABOR</p><br> <input type="checkbox" id="topping1" name="topping1" value="sabor">
+                    <label for="topping1">sabor</label><br>
+                    <input type="checkbox" id="topping2" name="topping2" value="sabor1">
+                    <label for="topping2">sabor</label><br>
+                    <input type="checkbox" id="topping3" name="topping3" value="sabor2">
+                    <label for="topping3">sabor</label><br><br></td>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><p>COMPLEMENTO</p><br> <input type="checkbox" id="topping1" name="topping1" value="extra">
+                    <label for="topping1">extra</label><br>
+                    <input type="checkbox" id="topping2" name="topping2" value="extra2">
+                    <label for="topping2">extra</label><br>
+                    <input type="checkbox" id="topping3" name="topping3" value="extra3">
+                    <label for="topping3">extra</label><br><br></td>
+                
+            </tr>
+        </table>
+    </article>
+    <footer>
+        <p>Contacto</p>
+    </footer>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: rgb(238, 145, 145);
+            padding: 10px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(255, 255, 255);
+            width: 100%;
+        }
+        nav {
+            padding: 20px;
+            background: rgb(255, 255, 255);
+            width: 100%;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        li {
+            float: right;
+            text-align: center;
+            width: 10%;
+            color: rgb(255, 116, 225);
+        }
+        #muestras{
+            background-color: rgb(236, 170, 214);
+            padding: 150px;
+            width: 100%;
+            color: aliceblue;
+        }
+        #crea{
+            background-color: rgb(238, 145, 145);
+            padding: 150px;
+            width: 100%;
+            color: rgb(255, 255, 255);
+        }
+        footer{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+            color: rgb(238, 145, 145);
+            width: 100%;
+        }
+    </style>
+</body>
+
+</html>

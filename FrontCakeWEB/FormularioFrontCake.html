@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos compuestos</title>
+</head>
+<body>
+    <h1>CREA TU PASTEL Y NOSOTROS TE LO MANDAMOS!</h1>
+    <h2>Ejemplo de Formulario</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombrepastel">Nombre de tu pastel:</label>
+        <input type="text" id="nombrepastel" name="nombrepastel"><br><br>
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" form="form1"><br><br>
+        <label for="correo1">Correo electronico:</label>
+        <input type="email" id="correo1" name="correo1"><br><br>
+        <label for="telefono">Numero telefonico:</label>
+        <input type="tel" id="telefono" name="telefono" maxlength="10"><br><br>
+        <label for="codigo">Codigo postal:</label>
+        <input type="text" id="codigo" name="codigo" maxlength="5"><br><br>
+        <label for="fracc">Fraccionamiento:</label>
+        <input type="text" id="fracc" name="fracc"><br><br>
+        <label for="calle">Calle y numero:</label>
+        <input type="text" id="calle" name="calle"><br><br>
+        <label for="referencias">Referencias:</label>
+        <input type="text" id="referencias" name="referencias"><br><br>
+        <label for="fecha">Fecha y hora de entrega deseada (Aprox. 5 dias despues de la compra):</label>
+        <input type="datetime-local" id="fecha" name="fecha"><br><br>
+        <label for="formapago">Numero telefonico:</label>
+        <select id="pago" name="pago">
+            <option value="efectivo">EFECTIVO</option>
+            <option value="paypal">PAYPAL</option>
+            <option value="debito">DEBITO</option>
+        </select><br><br>
+    <hr>
+    <input type="submit" value="Submit">
+    <input type="reset">
+    </form>
+    <style>
+        body{
+            background-color: rgb(238, 145, 145);
+            color: white;
+        }
+    </style>
+</body>
+</html>
