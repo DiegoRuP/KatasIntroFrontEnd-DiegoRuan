@@ -58,8 +58,37 @@ h2, h3{
     color: rgb(73, 83, 116);
     font-weight: 600;
 }
+#bottomMain{
+    height: 50px;
+    width: 150px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: block;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    opacity: .17;
+}
+#benefitstxt{
+    color: rgb(73, 83, 116);
+    font-size: 12px;
+}
+#benefitsicon{
+    height: 30px;
+    width: 30px;
+}
+#titlefooter{
+    color: rgb(21, 80, 129);
+    font-weight: 700 !important;
+    font-size: 16px;
+}
+#txtfooter{
+    font-size: small;
+}
 .containerMain{
     position: relative !important;
+}
+.preparation{
+    margin-top: 80px;
 }
 .form{
     color: rgb(73, 83, 116);
@@ -67,10 +96,14 @@ h2, h3{
     position: absolute !important;
     background-color: rgb(247, 247, 247);
     left: 0;
-    top: 78%;
+    top: -1990px;
     right: 20%;
     bottom: 0;
     margin: auto;
     height: 90px;
     width: 70%;
+}
+.footer{
+    background-color: rgb(234, 246, 253);
+    width: 100% !important;
 }
