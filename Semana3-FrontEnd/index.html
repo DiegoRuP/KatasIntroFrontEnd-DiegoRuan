@@ -4,59 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vacunacion</title>
+    <title>Vaccination</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Accion</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+          <a class="navbar-brand" href="#"><p id="navHometxt"> Vaccination</p></a>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="navtxt">Database</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="navtxt">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="navtxt">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="navtxt">Regulation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"><button class="btn btn-primary"> Hoax Buster</button></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </nav>
-        <nav class="menu">
-            <ul>
-                <li><button class="button-nav">Boton</button></li>
-                <li>Inventario</li>
-                <li>Ordenes</li>
-                <li>Inicio</li>
-            </ul>
-        </nav>
-        <div id="contenedor">
-            <div id="headertxt">
-                <h2>Fight Virus With Vaccines</h2>
-                <p>Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
+    </div>
+        <div class="container containerMain">
+          <div class="row align-items-center">
+            <div class="col">
+              <p id="maintitle">Fight Virus <br> With Vaccines</p>
+              <p id="maintxt">Let's stop this pandemic by killing the virus <br> with a vaccine, don't let yourself and your <br> family get infected</p>
+              <br>
+              <div class="row justify-content-start">
+                <div class="col-4">
+                  <p id="maintxtLogo"><img id="mainicon" src="images/shield.png"> Best protection</p>
+                </div>
+                <div class="col-4">              
+                  <p id="maintxtLogo"><img id="mainicon" src="images/star.png"> Selected Vaccines</p>
+                </div>
               </div>
-              <div id="bgcolor">
-                <img src="images/img1.png">
+              <p id="maintxtbottom"><img id="mainicon" src="images/clock.png"> Schedule your vaccinations</p>
+            </div>
+            <div class="col" id="bgcolor">
+              <img src="images/img1.png">
+            </div>
+          </div>
+          <div class="form">
+            <div class="row justify-content-start">
+              <div class="col-3">
+                <p id="maintxt"><img id="mainicon" src="images/location.png"> Location</p>
+                <p id="maintxtform">Jakarta Utara</p>
               </div>
+              <div class="col-3">              
+                <p id="maintxt"><img id="mainicon" src="images/date.png"> Date</p>
+                <p id="maintxtform">08 July 2021</p>
+              </div>
+              <div class="col-3">
+                <p id="maintxt"><img id="mainicon" src="images/type.png"> Vaccine Type</p>
+                <p id="maintxtform">Moderna</p>
+              </div>
+              <div class="col-3">              
+                <button class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>   
+          </div>
+        <div class="container containerMain">
+          <div class="row align-items-center">
+            
+          </div>
         </div>
 </body>
 </html>
