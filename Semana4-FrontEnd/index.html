@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+        <title> Pokedex LaunchX </title>
+    </head>
+    <body>
+        <img src="./img/PokemonLogo.png" height="100px">
+        <center><img src="./img/PokedexEmpty.png" alt="pokedex" width="1024px"></center><br>
+        <div style="position:absolute; top:335px; left:595px; visibility:visible z-index=1">
+            <img src="./img/Pokeball.png" id="pokeImg">
+        </div>
+        <div style="position:absolute; top:715px; left:570px; visibility:visible z-index=1">
+            <input type="text" placeholder="Ej: Pikachu" id="pokeNom">
+        </div>
+        <div style="position:absolute; top:620px; left:495px; visibility:visible z-index=1">
+            <button type="button" class="btn btn-dark btn-circle btn-xl" onclick="fetchPokemon()"></button>
+        </div>
+        <div style="position:absolute; top:330px; left:1070px; visibility:visible z-index=1">
+            <label>NO.</label>
+        </div>
+        <div style="position:absolute; top:330px; left:1110px; visibility:visible z-index=1">
+            <label id="pokeNo">???</label>
+        </div>
+        <div style="position:absolute; top:330px; left:1210px; visibility:visible z-index=1">
+            <label id="poke">???</label>
+        </div>
+        <div style="position:absolute; top:350px; left:1070px; visibility:visible z-index=1">
+            <label>TYPE</label>
+        </div>
+        <div style="position:absolute; top:350px; left:1210px; visibility:visible z-index=1">
+            <label id="pokeType">???</label>
+        </div>
+        <div style="position:absolute; top:370px; left:1070px; visibility:visible z-index=1">
+            <label>ATTACK</label>
+        </div>
+        <div style="position:absolute; top:370px; left:1350px; visibility:visible z-index=1">
+            <label id="pokeAtk">???</label>
+        </div>
+        <div style="position:absolute; top:390px; left:1070px; visibility:visible z-index=1">
+            <label>DEFENSE</label>
+        </div>
+        <div style="position:absolute; top:390px; left:1350px; visibility:visible z-index=1">
+            <label id="pokeDef">???</label>
+        </div>
+        <div style="position:absolute; top:410px; left:1070px; visibility:visible z-index=1">
+            <label>SP.ATK.</label>
+        </div>
+        <div style="position:absolute; top:410px; left:1350px; visibility:visible z-index=1">
+            <label id="pokeSpatk">???</label>
+        </div>
+        <div style="position:absolute; top:430px; left:1070px; visibility:visible z-index=1">
+            <label>SP.DEF.</label>
+        </div>
+        <div style="position:absolute; top:430px; left:1350px; visibility:visible z-index=1">
+            <label id="pokeSpdef">???</label>
+        </div>
+        <div style="position:absolute; top:450px; left:1070px; visibility:visible z-index=1">
+            <label>SPEED</label>
+        </div>
+        <div style="position:absolute; top:450px; left:1350px; visibility:visible z-index=1">
+            <label id="pokeSpeed">???</label>
+        </div>
+        <div style="position:absolute; top:740px; left:1070px; visibility:visible z-index=1">
+            <label>HEIGHT</label>
+        </div>
+        <div style="position:absolute; top:740px; left:1150px; visibility:visible z-index=1">
+            <label id="pokeHgt">???</label>
+        </div>
+        <div style="position:absolute; top:740px; left:1260px; visibility:visible z-index=1">
+            <label>WEIGHT</label>
+        </div>
+        <div style="position:absolute; top:740px; left:1340px; visibility:visible z-index=1">
+            <label id="pokeWgt">???</label>
+        </div>
+    </body>
+    <footer>
+        <script src="./pokedex.js"></script>
+    </footer>
+    <style type="text/css">
+
+        @font-face {
+            font-family:Retro;
+            src: url("./img/PokeLetter.ttf");
+        }
+        .btn-circle.btn-xl {
+            width: 70px;
+            height: 70px;
+            padding: 10px 16px;
+            border-radius: 35px;
+            font-size: 12px;
+            text-align: center;
+        }
+        #pokeImg{
+            width: 200px;
+            height: 200px;
+        }
+        #pokeNom{
+            background-color: transparent;
+            border: 0;
+            font-weight: 800;
+            font-family:Retro;
+            width: 165px;
+            height: 74px;
+            font-size: 18px;
+        }
+        body{
+            background: rgb(93, 155, 226);
+        }
+        label{
+            background-color: transparent;
+            border: 0;
+            font-family:Retro;
+            font-size: 10px;
+            color: yellow;
+        }
+        img{
+            box-shadow: 1px;
+        }
+    </style>
+</html>
